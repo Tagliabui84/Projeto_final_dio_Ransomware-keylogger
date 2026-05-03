@@ -1,0 +1,107 @@
+# 🛡️ GUIA DE PREVENÇÃO CONTRA MALWARES
+
+## 🔒 Ransomware - Estratégias de Defesa
+
+### 1. Backups (A defesa MAIS importante!)
+- ✅ **Regra 3-2-1**: 3 cópias, 2 mídias diferentes, 1 fora da rede
+- ✅ Backup offline (não conectado à rede)
+- ✅ Teste regular de restauração
+- ✅ Backup versionado (protege contra criptografia)
+
+### 2. Proteções Técnicas
+- 🔧 **Antivírus com proteção anti-ransomware** (CrowdStrike, SentinelOne, etc.)
+- 🔧 **EDR (Endpoint Detection and Response)** - monitoramento comportamental
+- 🔧 **Restrição de execução** (AppLocker, Windows Defender Application Control)
+- 🔧 **Princípio do menor privilégio** - usuários sem admin
+- 🔧 **Atualizações regulares** (patch management)
+
+### 3. Configurações de Segurança
+- 🛡️ Desabilitar macros do Office
+- 🛡️ Bloquear execução de scripts (PowerShell restrito)
+- 🛡️ Filtros de extensões de email (.exe, .scr, .js)
+- 🛡️ Network segmentation (segmentação de rede)
+
+### 4. Conscientização
+- 📚 Treinamento anti-phishing
+- 📚 Simulações de ataque
+- 📚 Política clara de segurança
+
+## ⌨️ Keylogger - Estratégias de Defesa
+
+### 1. Proteções Técnicas
+- 🔐 **Antivírus/EDR com detecção de keylogging**
+- 🔐 **Gerenciador de senhas** (evita digitação manual)
+- 🔐 **2FA/MFA** (protege mesmo com senha capturada)
+- 🔐 **Virtual keyboards** para senhas críticas
+
+### 2. Configurações
+- 🛡️ Bloquear instalação de software não autorizado
+- 🛡️ Monitorar processos suspeitos em background
+- 🛡️ Políticas de AppLocker
+- 🛡️ Firewall de aplicação
+
+### 3. Monitoramento
+- 👁️ Monitoramento de tráfego de rede (exfiltração de dados)
+- 👁️ Detecção de processos injectando hooks de teclado
+- 👁️ SIEM para correlação de eventos
+
+## 📋 CHECKLIST DIÁRIO DE SEGURANÇA
+
+### Para Usuários:
+- [ ] Desconfiar de emails suspeitos (verificar remetente)
+- [ ] Não baixar arquivos de fontes não confiáveis
+- [ ] Verificar extensões de arquivos (.exe disfarçados)
+- [ ] Manter sistema e softwares atualizados
+- [ ] Usar senhas diferentes para cada serviço
+
+### Para Administradores:
+- [ ] Backups validados diariamente
+- [ ] Logs de segurança monitorados
+- [ ] Atualizações de segurança aplicadas
+- [ ] Testes de penetração regulares
+- [ ] Revisão de permissões de usuários
+
+## 🏥 PLANO DE RESPOSTA A INCIDENTES
+
+### 1. Detecção
+- Monitoramento 24/7
+- Alertas de comportamento anômalo
+
+### 2. Contenção
+- **Imediato**: Isolar máquina da rede
+- **Backup**: Não desligar (preservar evidências)
+- **Forensics**: Coletar logs e memória
+
+### 3. Erradicação
+- Remover malware
+- Restaurar de backups limpos
+- Reinstalar sistemas se necessário
+
+### 4. Recuperação
+- Restaurar dados dos backups
+- Mudar todas as senhas
+- Implementar melhorias
+
+### 5. Lições Aprendidas
+- Documentar o incidente
+- Treinar equipe
+- Melhorar controles
+
+## 🚨 FERRAMENTAS RECOMENDADAS
+
+| Categoria | Ferramentas |
+|-----------|-------------|
+| Antivírus/EDR | CrowdStrike, SentinelOne, Microsoft Defender |
+| Backup | Veeam, Acronis, Backup nativo (Windows/Mac) |
+| Análise de Malware | Cuckoo Sandbox, ANY.RUN, VirusTotal |
+| Monitoramento | Wazuh, Elastic Security, Splunk |
+| Firewall | pfSense, Windows Firewall, Fortinet |
+
+## ⚠️ RESPONSABILIDADE ÉTICA
+
+**IMPORTANTE**: Este conhecimento deve ser usado APENAS para:
+- Defesa e proteção de sistemas
+- Pesquisa em ambientes controlados
+- Educação e conscientização
+
+**NUNCA** utilize estas técnicas sem autorização explícita!
